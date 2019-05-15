@@ -1,12 +1,6 @@
 const axios = require('axios')
 
-
-
-// console.log(encodeURL)
-
 const getLugar = async(direcccion) => {
-    // console.log(direcccion);
-
     const encodeURL = encodeURI(direcccion)
     const instance = axios.create({
         baseURL: ` https://devru-latitude-longitude-find-v1.p.rapidapi.com/latlon.php?location=${encodeURL}`,
